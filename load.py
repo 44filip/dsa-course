@@ -6,9 +6,8 @@ def load_numbers(file_name):
       numbers.append(int(line))
   return numbers
 
-def load_strings(file_name):
-  strings = []
-  with open(file_name) as f:
-    for line in f:
-      strings.append(line)
-  return strings
+# Same goes for this snippet of code
+def load_strings(filename):
+    with open(filename, "r") as f:
+        lines = f.readlines()
+    return [line.strip() for line in lines]
