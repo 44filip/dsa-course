@@ -1,2 +1,7 @@
 # dsa-course
-A course hosted on https://teamtreehouse.com partnered with https://freeCodeCamp.org
+
+Completed DSA course made by Treehouse and freeCodeCamp. 🎉\
+Every script is tested, and comments are well documented. 🤓\
+It is my stepping stone towards greater CS knowledge. 🚀\
+\
+@S-Filip 👋
