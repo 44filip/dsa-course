@@ -7,6 +7,9 @@ from load import load_numbers
 numbers = load_numbers(sys.argv[1])
 
 def selection_sort(_list):
+    """
+    Runs in O(n^2)
+    """
     sorted_list = []                                         # Initialize an empty list
     for i in range(len(_list)):                             # Iterate as many times as there are elements in the list
         index_to_move = index_of_min(_list)                 # Find the index of the smallest element (expanded in index_of_min)

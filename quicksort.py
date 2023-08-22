@@ -7,6 +7,11 @@ from load import load_numbers
 numbers = load_numbers(sys.argv[1])
 
 def quicksort(_list):
+    """
+    Runs in O(n^2) worst case                   [Pivot is the smallest or the largest number]
+    Runs in O(n log n) best case                [Pivot is a median value of the list]
+    Runs in O(n log n) average case             [Getting the worst/best case is rare]
+    """
     if len(_list) <= 1:                         # Set up a base case which stops the recursion
         return _list
     
