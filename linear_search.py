@@ -10,7 +10,8 @@ names = load_strings(sys.argv[1])
 
 def linear_search(_list, target):
     """
-    Returns the index position of the target if found, else returns -1
+    Returns the index location of search target or None
+    Runs in O(n)
     """
     
     for i in range(0, len(_list)):

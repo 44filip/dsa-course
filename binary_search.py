@@ -9,6 +9,10 @@ from load import load_strings
 names = load_strings(sys.argv[1])
 
 def binary_search(_list, target):
+    """
+    Returns the index location of search target or None
+    Runs in O(log n)
+    """
     first = 0
     last = len(_list) - 1
 
