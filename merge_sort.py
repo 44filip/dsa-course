@@ -1,4 +1,3 @@
-#[85, 53, 27, 17, 20, 90, 35]
 def merge_sort(list):
     """
     Sorts a list in ascending order
