@@ -1,0 +1,30 @@
+numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+def binary_search(_list, target):
+    first = 0
+    last = len(_list) - 1
+    
+    while first <= last:
+        midpoint = (first + last)//2
+        
+        if _list[midpoint] == target:
+            return midpoint
+        elif _list[midpoint] < target:
+            first = midpoint + 1
+        else:
+            last = midpoint - 1
+            
+    return -1
+            
+            
+def verify(index):
+    if index != -1:
+        print("Target found at index: ", index, "")
+    else:
+        print("Target not found in list.")
+        
+result = binary_search(numbers,5)
+verify(result)
+
+result = binary_search(numbers,11)
+verify(result)
