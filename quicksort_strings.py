@@ -2,9 +2,9 @@
 import sys
 
 # Importing a function to "listify" strings in a .txt file as integers
-from load import load_numbers
+from load import load_strings
 
-names = load_numbers(sys.argv[1])
+names = load_strings(sys.argv[1])
 
 def quicksort(_list):
     """
