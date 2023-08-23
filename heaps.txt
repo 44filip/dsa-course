@@ -1,0 +1,13 @@
+Heap: A heap is a tree-based data structure in which the nodes are arranged in a way that satisfies the heap property. The heap property is different for a max heap and a min heap.
+Max heap: In a max heap, the value of the root node is greater than or equal to the values of its children.
+Min heap: In a min heap, the value of the root node is less than or equal to the values of its children.
+Heapsort: Heapsort is a sorting algorithm that works by repeatedly extracting the maximum (or minimum) element from a heap.
+Priority queue: A priority queue is a data structure that maintains a set of elements with priorities. The priority queue allows you to efficiently insert, delete, and find the element with the highest (or lowest) priority.
+
+Here are some additional details about each data structure:
+
+Heap: A heap can be implemented using an array or a linked list. The array implementation is more efficient, but the linked list implementation is more flexible.
+Max heap: A max heap can be used to implement a priority queue where the elements with the highest priority are always at the front of the queue.
+Min heap: A min heap can be used to implement a priority queue where the elements with the lowest priority are always at the front of the queue.
+Heapsort: Heapsort is a very efficient sorting algorithm. It has a time complexity of O(n log n).
+Priority queue: Priority queues are used in a variety of applications, such as scheduling tasks, managing memory, and searching for elements in a large data set.
