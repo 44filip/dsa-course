@@ -4,20 +4,20 @@ Imagine you have a divide-and-conquer algorithm that solves a problem of size n.
 
 The Master method can be used to solve the recurrence relation that describes the time complexity of this algorithm. The recurrence relation is:
 
-T(n) = aT(n/b) + f(n)
+*   T(n) = aT(n/b) + f(n)
 
 where:
 
-T(n) is the time it takes to solve a problem of size n
-a is a constant that is greater than or equal to 1
-b is a constant that is greater than 1
-f(n) is the work that is done outside of the recursive calls
+*   T(n) is the time it takes to solve a problem of size n
+*   a is a constant that is greater than or equal to 1
+*   b is a constant that is greater than 1
+*   f(n) is the work that is done outside of the recursive calls
 
 The Master method has three cases:
 
-Case 1: If f(n) = O(n^{log_b a - 1}), then T(n) = Θ(n^{log_b a}).
-Case 2: If f(n) = Θ(n^{log_b a}), then T(n) = Θ(n^{log_b a} log n).
-Case 3: If f(n) = Ω(n^{log_b a + 1}), then T(n) = Θ(f(n)).
+*   Case 1: If f(n) = O(n^{log_b a - 1}), then T(n) = Θ(n^{log_b a}).
+*   Case 2: If f(n) = Θ(n^{log_b a}), then T(n) = Θ(n^{log_b a} log n).
+*   Case 3: If f(n) = Ω(n^{log_b a + 1}), then T(n) = Θ(f(n)).
 
 To use the Master method, you first need to determine which case applies to your recurrence relation. This can be done by comparing the growth rate of f(n) to the growth rate of n^{log_b a}.
 
@@ -25,7 +25,5 @@ n^{log_b a} is the growth rate of the recursive calls.
 f(n) is the growth rate of the work that is done outside of the recursive calls.
 
 If f(n) is smaller than n^{log_b a}, then Case 1 applies. This means that the time complexity of the algorithm is Θ(n^{log_b a}).
-
 If f(n) is equal to n^{log_b a}, then Case 2 applies. This means that the time complexity of the algorithm is Θ(n^{log_b a} log n).
-
 If f(n) is larger than n^{log_b a}, then Case 3 applies. This means that the time complexity of the algorithm is Θ(f(n)).
