@@ -23,12 +23,12 @@ class LinkedList:
     def __repr__(self):
         """
         Returns a string representation of the list
-        Takes O(n) time
+        Runs in O(n) time
         """
         nodes = []
         current = self.head
         
-        while current:
+        while current is not None:
             if current is self.head:
                 nodes.append("[Head: %s]" % current.data)
             elif current.next_node is None:
@@ -45,12 +45,12 @@ class LinkedList:
     def size(self):
         """
         Returns the number of nodes in the list
-        Takes O(n) time
+        Runs in O(n) time
         """
         current = self.head
         count = 0
         
-        while current:
+        while current is not None:
             count += 1
             current = current.next_node
             
@@ -74,7 +74,7 @@ class LinkedList:
     def add(self, data):
         """
         Adds a new Node containing data at the head of the list
-        Takes O(1) time
+        Runs in O(1) time
         """
         new_node = Node(data)
         new_node.next_node = self.head
@@ -85,7 +85,7 @@ class LinkedList:
         Inserts a new Node containing data at index position
         Insertion takes O(1) time but finding the node takes O(n) time
         Returns the node's data and index at which it was inserted
-        Takes overall O(n) time
+        Runs in overall O(n) time
         """
         list_size = self.size()
         
@@ -115,7 +115,7 @@ class LinkedList:
         """
         Removes Node containing data that matches the key
         Returns the removed node's data or None
-        Takes O(n) time
+        Runs in O(n) time
         """
         current = self.head
         prev_node = None
@@ -143,7 +143,7 @@ class LinkedList:
         """
         Removes Node at specified index
         Returns the removed node's index or None
-        Takes O(n) time
+        Runs in O(n) time
         """
         current = self.head
         prev_node = None
@@ -171,12 +171,12 @@ class LinkedList:
         """
         Search for the first node containing data that matches the key
         Returns the node or None
-        Takes O(n) time
+        Runs in O(n) time
         """
         
         current = self.head
         
-        while current:
+        while current is not None:
             if current.data == key:
                 return current
             else:
