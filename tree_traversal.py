@@ -53,6 +53,7 @@ Levelorder is BREADTH-FIRST (Queue)
 """
 
 def levelorder(node):
+    # Runs in O(n)
     if node is None:
         return
 
