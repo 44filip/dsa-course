@@ -7,7 +7,6 @@ if 1 in new_list: print(True)
 for n in new_list:
     if n == 1:
         print(True)
-        
         break
     
 numbers.append(1)         # Add at the end
